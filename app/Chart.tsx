@@ -14,7 +14,7 @@ function Bar({ name, amount, percentage, highlight=false }: { name: string, amou
     <div className={`relative`}>
       <div id={name} className={`peer transition ${bgColor} rounded hover:transition hover:cursor-pointer ${hoverColor}`} style={style}>
       </div>
-      <div className={`transition-opacity opacity-0 absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-full bg-darkbrown text-verypaleorange text-[15px] text-center font-semibold rounded-md p-2 peer-hover:transition-opacity peer-hover:opacity-100 md:text-[18px]`}>
+      <div className={`transition-opacity opacity-0 absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-full bg-darkbrown text-verypaleorange text-[12px] text-center font-semibold rounded-md p-1.5 peer-hover:transition-opacity peer-hover:opacity-100 md:text-[18px] md:p-2`}>
         ${amount}
       </div>
     </div>
