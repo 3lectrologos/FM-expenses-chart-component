@@ -10,7 +10,9 @@ const config: Config = {
     extend: {
       colors: {
         softred: 'hsl(10 79% 65%)',
+        softerred: 'hsl(10 100% 76%)',
         cyan: 'hsl(186 34% 60%)',
+        softercyan: 'hsl(186 49% 80%)',
         darkbrown: 'hsl(25 47% 15%)',
         mediumbrown: 'hsl(28 10% 53%)',
         cream: 'hsl(27 66% 92%)',
