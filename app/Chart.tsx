@@ -8,13 +8,13 @@ function Bar({ name, amount, percentage, highlight=false }: { name: string, amou
     height: `${150 * percentage / 100}px`
   }
   const bgColor = highlight ? 'bg-cyan' : 'bg-softred'
-  const hoverColor = highlight ? 'md:hover:bg-softercyan' : 'md:hover:bg-softerred'
+  const hoverColor = highlight ? 'hover:bg-softercyan' : 'hover:bg-softerred'
 
   return (
     <div className={`relative`}>
-      <div id={name} className={`peer transition ${bgColor} rounded md:hover:transition md:hover:cursor-pointer ${hoverColor}`} style={style}>
+      <div id={name} className={`peer transition ${bgColor} rounded hover:transition hover:cursor-pointer ${hoverColor}`} style={style}>
       </div>
-      <div className={`transition-opacity opacity-0 absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-full bg-darkbrown text-verypaleorange text-[18px] text-center font-semibold rounded-md p-2 peer-hover:transition-opacity peer-hover:opacity-100`}>
+      <div className={`transition-opacity opacity-0 absolute -top-2 left-1/2 transform -translate-x-1/2 -translate-y-full bg-darkbrown text-verypaleorange text-[15px] text-center font-semibold rounded-md p-2 peer-hover:transition-opacity peer-hover:opacity-100 md:text-[18px]`}>
         ${amount}
       </div>
     </div>
