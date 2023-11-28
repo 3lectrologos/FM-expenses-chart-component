@@ -27,7 +27,7 @@ export default function Chart({ data, currentDay=undefined }: { data: Data, curr
     <div className={`flex flex-col gap-y-[10px] md:gap-y-[8px]`}>
       <div className={`flex flex-row justify-between gap-x-3 md:gap-x-[18px]`}>
         {data.map(({ day, amount }) => (
-          <div key={day} className={`basis-0 grow flex flex-col justify-end`}>
+          <div key={day} className={`basis-0 grow flex flex-col gap-y-1.5 justify-end`}>
             <Bar name={day} amount={amount} percentage={100 * amount / maxAmount} highlight={day === currentDay} />
             <span key={day} className={`text-mediumbrown text-[12px] text-center md:text-[15px]`}>
               {day}

@@ -46,7 +46,7 @@ function Total({ amount, percentage }: { amount: number, percentage: number }) {
 
 function Details({ data }: { data: Data }) {
   return (
-    <div className={`flex flex-col gap-y-6 bg-verypaleorange px-5 py-6 rounded-lg md:rounded-[20px] md:px-10 md:pt-8 md:pb-11 md:gap-y-8`}>
+    <div className={`flex flex-col gap-y-6 bg-verypaleorange px-5 py-6 rounded-lg md:rounded-[20px] md:px-10 md:pt-8 md:pb-12 md:gap-y-8`}>
       <h1 className={`text-darkbrown text-[24px] font-bold mb-6 md:text-[32px] md:mb-8`}>
         Spending - Last 7 days
       </h1>
